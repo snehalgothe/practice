@@ -1,0 +1,25 @@
+
+
+    x=200
+    y=200
+    height=15
+    width=15
+    angle=0
+
+    index = 0
+
+    function draw(){
+      ctx.clearRect(0,0,1000,1000);
+      angle=(angle+0.1%6.28);
+      //y=y+5*Math.sin(angle/10);
+      y=y+0.5*Math.cos(angle/10);
+      ctx.fillRect(x+index,y,width,height);
+      index = index +0.2;
+    }
+
+    setInterval(draw, 4);
+    
+
+
+
+
